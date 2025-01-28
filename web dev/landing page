@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(to bottom right, #e8f5e9, #c8e6c9);
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2e7d32;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav ul li {
+      font-size: 16px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #2e7d32;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 20px;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 36px;
+      color: #1b5e20;
+    }
+
+    .hero-text p {
+      margin: 15px 0;
+      font-size: 18px;
+    }
+
+    .hero-text button {
+      padding: 10px 20px;
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .hero-text button:hover {
+      background-color: #1b5e20;
+    }
+
+    .hero-image {
+      max-width: 45%;
+    }
+
+    .hero-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+      .hero-image {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">LOGO</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Content</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Web Design & Development</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+      <button>Read More</button>
+    </div>
+    <div class="hero-image">
+        <img src="bg.png" alt="Bg Image">
+      </div>
+    </section>
+  </body>
+  </html>
